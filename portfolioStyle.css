@@ -1,0 +1,134 @@
+﻿.container-fluid{
+    width:1336px;
+    padding-top:10px;
+}
+
+li a{
+    display:inline-flex;
+    align-items:center;
+    color:black;
+    font-family: 'Crimson Text', serif;
+    font-size:38px;
+    margin-left:35px;
+    margin-right:35px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border: 1px solid black;
+    height: 80px;
+    width: 1336px;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #9d898e;
+}
+
+#coffeeShopRow {
+    padding-top: 40px;
+    font-family: 'Helvetica', serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#pic {
+    height:530px;
+    width:450px;
+    background-image: url('portfolioPhotos/7425CB7A-B0A4-4ADA-8EE6-307CEDC754C7.JPG');
+    background-size:cover;
+    background-repeat:no-repeat;
+    box-shadow:20px 20px 10px grey;
+}
+
+#gif {
+    display: none;
+    height: 530px;
+    width: 500px;
+    background-image: url('https://media.giphy.com/media/1zi3cOXWvzjEsvyOlI/giphy.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow:20px 20px 10px grey;
+}
+
+#TVgif {
+    display: none;
+    height: 530px;
+    width: 500px;
+    background-image: url('https://media.giphy.com/media/cXVGhon8PMxeSIZ4xO/giphy.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow:20px 20px 10px grey;
+}
+
+p, h6, a{
+    margin-left:65px;
+    margin-right:65px;
+}
+
+#coffeeShopGithub{
+    color:black;
+}
+
+#coffeeShopGithub:hover {
+    text-decoration: none;
+    color: #9d898e;
+}
+
+.footer{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+}
+
+#TuscanyVillaRow {
+    padding-top: 40px;
+    font-family: 'Helvetica', serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+#TVpic {
+    height: 530px;
+    width: 500px;
+    background-image: url('portfolioPhotos/Image from iOS (2).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:20px 20px 10px grey;
+}
+
+#github, #tvphoto {
+    color: black;
+}
+
+#github:hover, #tvphoto:hover {
+        text-decoration: none;
+        color: #9d898e;
+    }
+
+.jumbotron {
+    height: 530px;
+    width: 500px;
+    background-image: url('portfolioPhotos/vpsheltercodeshot.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow:20px 20px 10px grey;
+}
+
+#VPShelterRow {
+    padding-top: 40px;
+    font-family: 'Helvetica', serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}

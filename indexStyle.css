@@ -1,0 +1,63 @@
+﻿.container-fluid{
+    width:1336px;
+    height:700px;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.logo{
+    display:flex;
+    justify-content:center;
+}
+
+#enterButton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-family: 'Crimson Text', serif;
+    border: 2px solid black;
+    border-radius:5 px;
+    width:270px;
+    height:45px;
+}
+
+.enterButton{
+    display:flex;
+    justify-content:center;
+}
+
+/*NEON DISPLAY*/
+#neon {
+    display: none;
+    width: 1336px;
+    height: 800px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.logoNeon {
+    display: flex;
+    justify-content: center;
+}
+
+#enterButtonNeon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Crimson Text', serif;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 270px;
+    height: 45px;
+}
+
+.enterButtonNeon {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
