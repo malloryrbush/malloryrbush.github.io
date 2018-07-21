@@ -23,7 +23,7 @@ body, html {
 #logo{
     display:flex;
     align-items:center;
-    background-image: url('/LogoPhoto/textlogoportfoliobackground.jpg');
+    background-image: url('/textlogoportfoliobackground.jpg');
 }
 
 #about{
@@ -79,7 +79,7 @@ body, html {
 }
 
 #TuscanyVilla{
-    background-image: url('/portfolioPhotos/Image from iOS.jpg');
+    background-image: url('/Image from iOS.jpg');
     background-size:contain;
 }
 
