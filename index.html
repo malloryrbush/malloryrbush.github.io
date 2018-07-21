@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mallory Bush Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -12,43 +13,95 @@
 </head>
 <body>
 
-    <div class="container-fluid" id="reg">
-        <div class="logo">
-            <div class="row">
-                <div class="col">
-                    <img src="photos/Image from iOS.jpg" width="400" height="550" />
-                </div>
-            </div>
-        </div>
-        <div class="enterButton">
-            <div class="row" id="enterButtonRow">
-                <div class="col">
-                    <a href="portfolio.html" class="button" id="enterButton" onmouseover="Replace()">ENTER</a>
-                </div>
-            </div>
-        </div>
+<!-- LOGO BACKGROUND IMAGE AND CONTACT ICONS-->
+<div class="parallax" id="logo">
+    <div class="row">
+        <div class="col">
+    <a class="contactIcons" href="https://github.com/malloryrbush/"><img src="/newcontacticons/github.png" width="30" height="30"></a><br>
+    <a class="contactIcons" href="https://www.linkedin.com/in/malloryrbush/"><img src="/newcontacticons/linkedin.png" width="30" height="30"></a><br>
+    <a class="contactIcons" href="mailto:malloryrbush@hotmail.com"><img src="/newcontacticons/email.png" width="30" height="30"></a>
+</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+    Mallory Bush is a full stack web designer based in Cleveland, Ohio.
+
+<!-- <p>MALLORY BUSH IS A 25 YEAR OLD FULL STACK WEB DESIGNER BASED IN CLEVELAND, OHIO.<br><br>
+    2007-2009: Designed custom myspace layouts using HTML & CSS<br>
+    2013-2018: </p> -->
+</div>
+
+<!-- COFFEE SHOP BACKGROUND IMAGE -->
+<div class="parallax" id="CoffeeShop"></div>
+
+<!-- COFFEE SHOP DESCRIPTION -->
+<div id="CSDescription">
+        <div class="row">
+                <div id ="CSText" class="col-6">
+        <h4>COFFEE SHOP MOCKUP WEBSITE</h4>
+
+        <p>
+            Planned, designed, and coded a mockup website
+            for a coffee shop. The website includes photos of
+            the shop, a scrolling carousel featuring photos of
+            drinks the customer may purchase, a map of where
+            the coffee shop is located linking to Google maps,
+            and separate pages for an About section and the Menu.
+        </p>
+
+        <p>
+            SKILLS USED:<br />
+            HTML  |  FLEXBOX<br />
+            CSS  |  CSS GRID<br />
+        </p>
+
+        <p>
+            GITHUB:
+            <a class="github" href="https://github.com/malloryrbush/CoffeeShop">www.github.com/malloryrbush/CoffeeShop</a>
+        </p>
     </div>
 
+    <!-- COFFEE SHOP GIF -->
+<div id="CSgif" class="col-6">
+        <img src="/gifs/coffeeshopgif.webp" height="300px" width="450px"/>
+</div>
+</div>
+</div>
 
-    <div class="container-fluid" id="neon" >
-        <div class="logoNeon">
-            <div class="row">
-                <div class="col" id="neonPhoto">
-                    <img src="neonPhotos/neonlogo.jpg" width="400" height="550"/>
-                </div>
-            </div>
+<!-- TUSCANY VILLA BACKGROUND IMAGE -->
+    <div class="parallax" id="TuscanyVilla"></div>
+
+    <!-- TUSCANY VILLA DESCRIPTION -->
+    <div id="TuscanyVillaDescription">
+        <div class="row">
+            <div id="TVText" class="col-6">
+            <h4>TUSCANY VILLA TRAVEL WEBSITE MOCKUP</h4>
+
+                            <p>
+                                Recreated a sample website mockup to practice building sites received from a designer.
+                                Required tasks included website responsiveness, carousels, jumbotrons, and a contact form.
+                                <a id="tvphoto" href="https://github.com/WeCanCodeIT/CleMasterSyllabus/blob/master/Graded%20Projects/TuscanyVilla/mockup.png?raw=true">Link to the designer mockup photo.</a>
+                            </p>
+
+                            <p>
+                                SKILLS USED:<br />
+                                HTML   |  FLEXBOX<br>
+                                CSS  |  CSS GRID<br />
+                            </p>
+
+                            <p>
+                                GITHUB:
+                                <a class="github" href="https://github.com/malloryrbush/TuscanyVilla">www.github.com/malloryrbush/TuscanyVilla</a>
+                            </p>
         </div>
-        <div class="enterButtonNeon">
-            <div class="row" id="enterButtonRow">
-                <div class="col">
-                    <a href="portfolio.html" class="button" id="enterButtonNeon" onmouseout="Replace()"><img src="neonPhotos/neonenterbutton.png" width="270" height="45"/>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div id="TVgif" class="col-6">
+                <img src="/gifs/tvscreenrecord.gif" height="300px" width="450px"/>
+
     </div>
+</div>
+</div>
 
-
-    <script src="indexJavaScript.js"></script>
 </body>
 </html>
