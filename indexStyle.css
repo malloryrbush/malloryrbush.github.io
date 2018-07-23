@@ -23,14 +23,15 @@ body, html {
 #logo{
     display:flex;
     align-items:center;
-    background-image: url('/textlogoportfoliobackground.jpg');
+    background-image: url('LogoPhoto/textlogoportfoliobackground.jpg');
 }
 
 #about{
     display:flex;
     justify-content:center;
     height:300px;
-    background-color:#F2F2F2;
+    background-color:#202020;
+    color:#FFFFFF;
     font-size:25px;
     text-align:center;
     padding-top:15px;
@@ -42,15 +43,13 @@ body, html {
 #CoffeeShop{
     background-image: url('portfolioPhotos/7425CB7A-B0A4-4ADA-8EE6-307CEDC754C7.JPG');
     background-size:contain;
+    background-color:#D2D3D5;
 }
 
-#CSDescription, #TuscanyVillaDescription{
+#CSDescription, #TuscanyVillaDescription, #SeamusPortfolioDescription{
     display:flex;
     height:325px;
-    background-color:#F2F2F2;
-    /* font-size:16px;
-    text-align:justify;
-    font-family: 'Crimson Text', serif; */
+    background-color:#202020;
     width:100%;
 }
 
@@ -61,6 +60,23 @@ body, html {
     font-size:16px;
     text-align:justify;
     font-family: 'Crimson Text', serif;
+    color:white;
+}
+
+#SeamusPortfolio{
+    background-image: url('portfolioPhotos/seamusPortfolioPic.png');
+    background-size:contain;
+    background-color:#D2D3D5;
+}
+
+#SPText{
+    padding-top:15px;
+    padding-left:100px;
+    padding-right:100px;
+    font-size:16px;
+    text-align:justify;
+    font-family: 'Crimson Text', serif;
+    color:white;
 }
 
 #TVText{
@@ -70,22 +86,24 @@ body, html {
     font-size:16px;
     text-align:justify;
     font-family: 'Crimson Text', serif;
+    color:white;
 }
 
-#CSgif, #TVgif{
+#CSgif, #TVgif, #SPgif{
    display:flex;
    justify-content:center;
    align-items:center;
 }
 
 #TuscanyVilla{
-    background-image: url('/Image from iOS.jpg');
+    background-image: url('portfolioPhotos/Image from iOS.jpg');
     background-size:contain;
+    background-color:#D2D3D5;
 }
 
 #TuscanyVillaDescription{
     height:350px;
-    background-color:#F2F2F2;
+    background-color:#202020;
     font-size:18px;
     text-align:justify;
     padding-top:15px;
