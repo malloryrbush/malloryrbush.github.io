@@ -1,139 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mallory Bush Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-    <link href="indexStyle.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<title>Mallory Bush Developer Portfolio v 2.0</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
 
-<!-- LOGO BACKGROUND IMAGE AND CONTACT ICONS-->
-<div class="parallax" id="logo">
-    <div class="row">
-        <div class="col">
-    <a class="contactIcons" href="https://github.com/malloryrbush/"><img src="github.png" width="30" height="30"></a><br>
-    <a class="contactIcons" href="https://www.linkedin.com/in/malloryrbush/"><img src="linkedin.png" width="30" height="30"></a><br>
-    <a class="contactIcons" href="mailto:malloryrbush@hotmail.com"><img src="email.png" width="30" height="30"></a>
+	<style>
+		
+		html{
+			scroll-behavior:smooth;
+		}
+		
+		body{
+			font-family: 'Montserrat';
+		}
+		
+		p{
+			margin:0;
+		}
+		
+		h1{
+			font-weight:bold;
+			color:white;
+			text-shadow:0 0 10px #333;
+		}
+		
+		h2{
+			font-weight:bold;
+		}
+		
+		.nav-row{
+			padding:1%;
+			position:fixed;
+			z-index:5;
+			width:101%;
+			background-color:#000;
+		}
+			
+		.main-content{
+			border-bottom:1px solid #333;
+		}
+		
+		.header, .links{
+			display:flex;
+			align-items:center;
+		}
+		
+		.title{
+			color:#FFF;
+			padding-left:5%;
+			font-size:20px;
+			font-weight:bold;
+		}
+		
+		.links{
+			justify-content:space-around;
+			color:white;
+		}
+		
+		.nav-link{
+			padding-left:2%;
+			color:white;
+			transition: color 0.3s linear;
+   			-webkit-transition: color 0.3s linear;
+   			-moz-transition: color 0.3s linear;
+		}
+		
+		.nav-link:hover{
+			color:#C5BAB4;
+			text-decoration:none;
+		}
+		
+		.hero{
+			height:100vh;
+			background-image:url("images/background.jpg");
+			background-size:cover;
+			background-repeat:no-repeat;
+			padding:8%;
+		}
+		
+		.sidebar{
+/*			box-shadow:0 0 10px black;*/
+		}
+		
+		.sidebarOne{
+			height:50vh;
+			background-color:#333;
+			padding:10%;
+			padding-top:20%;
+			color:white;
+		}
+		
+		.sidebarTwo{
+			height:50vh;
+			background-color:#FFF;
+			padding:10%;
+		}
+		
+		.portfolio{
+			padding:5%;
+		}
+		
+		.card {
+  			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  			transition: 0.3s;
+		}
+
+		.card:hover {
+  			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+		
+		.description{
+			padding:1%;
+			text-align:center;
+		}
+		
+		.subheader, .checkitout{
+			color:#C5BAB4;
+		}
+		
+		.checkitout:hover{
+			text-decoration:none;
+			color:#333;
+		}
+		
+		@media only screen and (max-width: 600px){
+			.card{
+				margin:5% 1%;
+			}
+			
+			.hero{
+				padding-top:30%;
+			}
+		}
+
+	</style>
+	
+<body>	
+	
+	<div class="row nav-row">
+		<div class="col-md-8 title">
+		<p>MALLORY BUSH</p>
+		</div>
+		<div class="col-md-4 links">
+			<a class="nav-link" target="_blank" href="https://www.linkedin.com/in/malloryrbush/">linkedin</a> | 
+			<a class="nav-link" target="_blank" href="mailto:malloryrbush@hotmail.com">contact</a>
+		</div>
+	</div>
+	
+	<div class="row main-content" id="top">
+		<div class="col-md-8 hero">
+		<h1 data-aos="fade-up"> SLEEK, MODERN WEB DESIGN</h1>
+			<p data-aos="fade-up" style="width:400px; padding:1%; color:white; text-shadow:0 0 10px black;">I'm a web designer and developer who loves to create websites for the modern businesswoman.<br>
+				Bonus points if your business revolves around health, fitness, beauty, or fashion.</p><br><br>
+			<a href="#portfolio-row" style="height:50px; color:white; background-color:black; padding:3% 10%;">RECENT WORK</a>
+		</div>
+		
+		<div class="col-md-4 sidebar">
+		<div class="row">
+			<div class="col sidebarOne" data-aos="fade-up">
+				<h2>NEW CLIENTS</h2>
+				<p>Now accepting new clients for full site builds or existing site customization. </p><br>
+				<a href="mailto:malloryrbush@hotmail.com" style="height:50px; color:black; background-color:white; padding:4% 10%;">CONTACT</a>
+			
+			</div>
+		</div>
+			<div class="row">
+			<div class="col sidebarTwo" data-aos="fade-up">
+			<h2>SUBSCRIBE</h2>
+				<p>Join the email list to stay informed on openings, deals, and surprises.</p>
+	
+				
+				
+				
+				<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://hotmail.us20.list-manage.com/subscribe/post?u=21cc63a28036aed2589324eb3&amp;id=0eb676dd75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+<div class="mc-field-group">
+<!--	<label for="mce-EMAIL">Email Address </label>-->
+	<input type="email" value="" name="EMAIL" class="required email" placeholder="EMAIL ADDRESS" id="mce-EMAIL" style="width:80%; height:50px;">
 </div>
+<div class="mc-field-group">
+<!--	<label for="mce-FNAME">First Name </label>-->
+	<input type="text" value="" name="FNAME" class="required" placeholder="FIRST NAME" id="mce-FNAME" style="width:80%; height:50px;">
 </div>
-</div>
-
-<!-- ABOUT -->
-<div id="about">
-    Mallory Bush is a full stack web designer based in Cleveland, Ohio.
-</div>
-
-<!-- COFFEE SHOP BACKGROUND IMAGE -->
-<div class="parallax" id="CoffeeShop"></div>
-
-<!-- COFFEE SHOP DESCRIPTION -->
-<div id="CSDescription">
-        <div class="row">
-                <div id ="CSText" class="col-6">
-        <h4>COFFEE SHOP MOCKUP WEBSITE</h4>
-
-        <p>
-            Planned, designed, and coded a mockup website
-            for a coffee shop. The website includes photos of
-            the shop, a scrolling carousel featuring photos of
-            drinks the customer may purchase, a map of where
-            the coffee shop is located linking to Google maps,
-            and separate pages for an About section and the Menu.
-        </p>
-
-        <p>
-            SKILLS USED:<br />
-            HTML  |  FLEXBOX<br />
-            CSS  |  CSS GRID<br />
-        </p>
-
-        <p>
-            GITHUB:
-            <a class="github" href="https://github.com/malloryrbush/CoffeeShop">www.github.com/malloryrbush/CoffeeShop</a>
-        </p>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_21cc63a28036aed2589324eb3_0eb676dd75" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button" style="height:50px; width:40%; background-color:black; color:white; border-radius:0;"></div>
     </div>
-
-    <!-- COFFEE SHOP GIF -->
-<div id="CSgif" class="col-6">
-        <img src="gifs/coffeeshopgif.webp" height="300px" width="450px"/>
+</form>
 </div>
-</div>
-</div>
-
-<!-- SEAMUS PORTFOLIO BACKGROUND IMAGE -->
-<div class="parallax" id="SeamusPortfolio"></div>
-
-<!-- SEAMUS PORTFOLIO DESCRIPTION -->
-<div id="SeamusPortfolioDescription">
-        <div class="row">
-                <div id ="SPText" class="col-6">
-        <h4>Professional Web Development Portfolio</h4>
-
-        <p>
-            Designed and coded a custom portfolio for a professional back end web developer. 
-            The website is fully responsive and the simple design reflects the personality 
-            of the client. 
-        </p>
-
-        <p>
-            SKILLS USED:<br />
-            HTML  |  FLEXBOX<br />
-            CSS  |  CSS GRID<br />
-            RESPONSIVE DESIGN
-        </p>
-
-        <p>
-            GITHUB:
-            <a class="github" href="https://github.com/malloryrbush/SeamusMichaelHoban.github.io">www.github.com/malloryrbush/SeamusMichaelHoban.github.io</a>
-        </p>
-    </div>
-
-    <!-- SEAMUS PORTFOLIO GIF -->
-<div id="SPgif" class="col-6">
-        <img src="https://media.giphy.com/media/dejsNYEg9JFbD0EoQX/giphy.gif" height="300px" width="450px"/>
-</div>
-</div>
-</div>
-
-
-<!-- TUSCANY VILLA BACKGROUND IMAGE -->
-    <div class="parallax" id="TuscanyVilla"></div>
-
-    <!-- TUSCANY VILLA DESCRIPTION -->
-    <div id="TuscanyVillaDescription">
-        <div class="row">
-            <div id="TVText" class="col-6">
-            <h4>TUSCANY VILLA TRAVEL WEBSITE MOCKUP</h4>
-
-                            <p>
-                                Recreated a sample website mockup to practice building sites received from a designer.
-                                Required tasks included website responsiveness, carousels, jumbotrons, and a contact form.
-                                <a id="tvphoto" href="https://github.com/WeCanCodeIT/CleMasterSyllabus/blob/master/Graded%20Projects/TuscanyVilla/mockup.png?raw=true">Link to the designer mockup photo.</a>
-                            </p>
-
-                            <p>
-                                SKILLS USED:<br />
-                                HTML   |  FLEXBOX<br>
-                                CSS  |  CSS GRID<br />
-                            </p>
-
-                            <p>
-                                GITHUB:
-                                <a class="github" href="https://github.com/malloryrbush/TuscanyVilla">www.github.com/malloryrbush/TuscanyVilla</a>
-                            </p>
-        </div>
-        <div id="TVgif" class="col-6">
-                <img src="tvscreenrecord.gif" height="300px" width="450px"/>
-
-    </div>
-</div>
-</div>
-
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+				
+				
+				
+<!--
+				<input type="text" placeholder="EMAIL ADDRESS" style="width:80%; height:50px"><br><br>
+				<a href="#" style="height:50px; color:white; background-color:black; padding:4% 10%;">SUBSCRIBE</a>
+-->
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	
+	<div class="row" id="portfolio-row">
+	<div class="col">
+		<h2 style="text-align:center; padding-top:3%;">RECENT WORK</h2>
+		</div>
+	</div>
+	<div class="row portfolio">
+		<div class="col-md-4 projectOne">
+			<div class="card">
+  				<img src="images/marisa-portfolio1.png" alt="Virtual Zen Website Design Mockup" style="width:100%">
+  				<div class="description">
+    				<h4><b>VIRTUAL ZEN</b></h4> 
+    				<p class="subheader">WEBSITE DESIGN</p><br>
+					<p>Virtual Zen is an online business partner bringing balance to your business. We designed the website to reflect Virtual Zen's chill yet badass boss vibes. <br>
+						<img src="images/VZcontact.png" width="100%">
+						<b>BUILT ON:</b> ShowIt | Dubsado<br>
+						
+						Check it out at <a class="checkitout" target="_blank" href="https://zenvirtually.com/">zenvirtually.com</a>.</p>
+  				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 projectTwo">
+		<div class="card">
+  				<img src="images/hbmfitness-portfolio1.png" alt="Hellbent Milliennail Fitness Website Design Mockup" style="width:100%" height="270px;">
+  				<div class="description">
+    				<h4><b>HELLBENT MILLENNIAL FITNESS</b></h4> 
+    				<p class="subheader">BLOG DESIGN</p> <br>
+					<p>Hellbent Millennial Fitness is a weight loss and fitness blog with a focus on sustainable healthy habits. The UI is modern, sleek, and edgy.</p>
+					<img src="images/hbmfitness-full.png" width="100%">
+					<b>BUILT ON:</b> Squarespace<br>
+						
+						Check it out at <a class="checkitout" target="_blank" href="https://www.hellbentmillennial.com/">hellbentmillennial.com</a>.</p>
+  				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-4 projectThree">
+		<div class="card">
+  				<img src="images/eobportfolio-01.png" alt="Lexus RC Web Page Design Mockup" style="width:100%">
+  				<div class="description">
+    				<h4><b>2019 LEXUS RC SPOTLIGHT PAGE</b></h4> 
+    				<p class="subheader">WEB PAGE DESIGN</p> <br>
+					<p>The 2019 Lexus RC is the hottest coupe on the market. This spotlight page is designed to highlight its standout features with a luxurious user experience. </p>
+					<img src="images/EOBspotlight-portfolio1.jpg" width="100%">
+					<b>BUILT ON:</b> HTML, CSS, JAVASCRIPT, FUEL API
+  				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row footer" style="text-align:center; margin-bottom:2%;">
+		<div class="col"><br><br>
+			<a href="#top" style="color:white; background-color:black; padding:1% 5%;">BACK TO TOP</a>
+		</div>
+	</div>
+	
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
